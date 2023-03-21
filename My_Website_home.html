@@ -11,13 +11,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <Title>Coder Info</Title>
     </head>
+    <style>
+    #div_bg1{
+        background-image: url('images/mybg1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 50px 0px white;
+    }
+    </style>
 
     <body>     
         <!--navigation--> 
-        <div class="container-fluid mt-2 sticky-top" style="font-weight: bold;" >
-            <nav class="navbar navbar-expand-md navbar-light " id="nav" style="border-radius: 10px;">
+        <div class="container-fluid mt-2 " style="font-weight: bold; background-color: rgba(0, 0, 0,.4);" >
+            <nav class="navbar navbar-expand-md navbar-light" id="nav" style="border-radius: 10px;">
                 <a href="My_Website_home.html" class="navbar-brand">
-                    <img src="Images/Obet1.jpg" alt="this is my pic" class="rounded-circle ms-5 border border-1 border-dark" style="width: 150px">
+                    <img src="Images/Obet1.jpg" alt="this is my pic" class="rounded-circle ms-5 border border-1 border-dark" style="width: 150px; box-shadow: 0px 0px 15px 0px white;">
                     
                 </a>
                 
@@ -25,56 +34,70 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end me-5" id="coll">
-                    <ul class="navbar-nav " style="float:right">
+                    <ul class="navbar-nav" style="float:right">
                         <li class="nav-item">
-                            <a class="nav-link" href="My_Website_AutoBio.html">Auto Biography</a>
+                            <a class="nav-link text-white" href="My_Website_AutoBio.html">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="My_Website_Contact.html">Contact</a>
+                            <a class="nav-link text-white" href="My_Website_Contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="My_Website_Projects.html">Projects</a>
+                            <a class="nav-link text-white" href="My_Website_Projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="My_Website_Skills.html">Skills</a>
+                            <a class="nav-link text-white" href="My_Website_Skills.html">Skills</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        
-    <div class="container mt-5 pb-3"  id="div_bg1" style="background-image: url('Images/div_background2.png');">
-        <div class="row d-flex justify-content-between" style="height: 600px;">
-<!--my home content-->
-            <!--HTML side-->
-            <div class="col-4 h-100 d-flex flex-column position-relative"  id="div_right">
-                <div class="h-100">
-                    <div class="h-50"></div>
-                    <div class="h-50">
-                        <div class="h-100" id="htmlside">
-                            <img class="logo"src="Images/htmllogo.png" alt="html logo">
-                        </div>
-                        <div class="fw-bold h-50" id="divAbout">
-                            <p class="text-html"> I can Develop a extremly HTML testable efficient codes, and maintaining their compatibility with browsers, devices, or operating systmes.</p>
-                        </div>
-                    </div> 
+    <!--my home content-->
+        <div class="container mt-4 "  id="div_bg1" >
+            <div class="row d-flex justify-content-between" id="div_html"style="height: 600px;">
+                <!--HTML side-->
+                <div class="col-4 h-100d-flex flex-column position-relative"  id="div_logo">
+                    <div class="h-100 ">
+                        <div class="h-50"></div>
+                        <div class="h-50 pb-3">
+                            <div class="h-100" id="htmlside">
+                                <img class="logo"src="Images/htmllogo.png" alt="html logo">
+                            </div>
+                            <div class="fw-bold h-50 pb-3" id="divAbout">
+                                <p class="text-html"> I can Develop a extremly HTML testable efficient codes, and maintaining their compatibility with browsers, devices, or operating systmes.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <!--Center content-->
+                <div class="col-4">
+                        <p class="fs-1 fw-bolder text-center text-white pt-3">Hi Im Robert Ramos</p>
+                        <p class="fs-3 fw-bolder text-center text-decoration-line-through font-monospace text-white">A Web Developer</p>
+                </div>
+
+                <!--CSS side-->
+                <div class="col-4 h-100 d-flex flex-column position-relative"  id="div_logo">
+                    <div class="h-100 ">
+                        <div class="h-50"></div>
+                        <div class="h-50 pb-3">
+                            <div class="h-100" id="htmlside">
+                                <img class="logo"src="Images/csslogo.png" alt="css logo">
+                            </div>
+                            <div class="fw-bold h-50 pb-3" id="divAbout">
+                                <p class="text-html"> I can Develop a extremly CSS testable efficient codes, and maintaining their compatibility with browsers, devices, or operating systmes.</p>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
-            <!--Center-->
-            <div class="col-4 h-100 d-flex flex-column position-relative"  id="div_right">
-                <div class="h-100">
-                    <div class="h-50"></div>
-                    <div class="h-50">
-                        <div class="h-100 " id="htmlside">
-                            <img class="logo"src="Images/csslogo.png" alt="css logo">
-                        </div>
-                        <div class="fw-bold h-50" id="divAbout">
-                            <p class="text-html"> I can Develop a extremly HTML testable efficient codes, and maintaining their compatibility with browsers, devices, or operating systmes.</p>
-                        </div>
-                    </div> 
-                </div>
-            </div>
+    <!--end of my home content-->
+
         </div>
-    </div>
+    <footer> 
+        <div class="text-center fw-bolder p-4 mt-4" style="background-color: rgba(0, 0, 0,.4);">
+            © 2021 Copyright:
+            <a class="text-white fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
     </body>
 </html>
