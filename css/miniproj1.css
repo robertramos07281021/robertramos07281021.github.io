@@ -6,11 +6,11 @@ body{
 body{
     margin: auto;
     overflow: auto;
-    background: linear-gradient(315deg, rgba(.2,.2,.2,.4) 10%, rgba(.2,.2,.2,.6) 38%, rgba(.2,.2,.2,.3) 68%, rgba(.2,.2,.4,.3) 98%);
+    background: linear-gradient(315deg, rgba(.8,.8,.8,.8) 10%, rgba(.8,.8,.8,.6) 38%, rgba(.8,.8,.8,.3) 68%, rgba(.8,.8,.8,.8) 98%);
     animation: gradient 10s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    box-shadow: 0px 0px 30px 0px black;
+    
     
 }
 
