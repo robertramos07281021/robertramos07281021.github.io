@@ -1,10 +1,13 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(white, black);
+    background-size: 200% 200%;
+
 }
 
 
-body{
-    margin: auto;
+#nav{
+    
     overflow: auto;
     background: linear-gradient(315deg, rgba(.8,.8,.8,.8) 10%, rgba(.8,.8,.8,.6) 38%, rgba(.8,.8,.8,.3) 68%, rgba(.8,.8,.8,.8) 98%);
     animation: gradient 10s ease infinite;
@@ -114,11 +117,9 @@ body{
 }
 
 
-/* footer */
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+.first-line::first-letter{
+    font-size: 200%;
+
 }
+
+

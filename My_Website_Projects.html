@@ -1,9 +1,9 @@
 <!Doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/miniproj1.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,17 +13,28 @@
     </head>
 
     <body>
-        <!--navigation--> 
-        <div class="container-fluid " style="font-weight: bold; background-color: rgba(0, 0, 0,.4);" >
-            <nav class="navbar navbar-expand-md navbar-light " id="nav" style="border-radius: 10px;">
+        <!--NAVIGATION--> 
+        <div style="font-weight: bold; background-color: rgba(0, 0, 0,.4);" >
+            <nav class="navbar navbar-expand-md navbar-light " id="nav" >
                 <a href="My_Website_home.html" class="navbar-brand">
                     <img src="Images/Obet1.jpg" alt="this is my pic" class="rounded-circle ms-5 border border-1 border-dark" style="width: 150px">
                 </a>
+                
+                <!--COLLAPSE BUTTON-->
                 <button class="navbar-toggler bg-secondary me-5" type="button" data-bs-toggle="collapse" data-bs-target="#coll" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!--collapse button-->
                 <div class="collapse navbar-collapse justify-content-end me-5" id="coll">
                     <ul class="navbar-nav " style="float:right">
+                        <li class="pt-2">
+                            <span class="pe-2">
+                                <span class="me-2"><a href="facebook.com" target="_blank"><img src="Images/fbminiicon.png" alt="fb" height="30px"></a></span>
+                                <span class="me-2"><a href="twitter.com" target="_blank"><img src="Images/icons8-twitter-24.png" alt="fb" height="30px"></a></span>
+                                <span class="me-2"><a href="github.com" target="_blank"><img src="Images/icons8-github-24.png" alt="fb" height="30px"></a></span>
+                                
+                            </span>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="My_Website_AutoBio.html">About Me</a>
                         </li>
@@ -40,19 +51,149 @@
                 </div>
             </nav>
         </div>
-        <!--end of navigation-->
+        <!--navigation-->
 
-<div>
-
-  
-</div>
-
-
-        <footer> 
-            <div class="text-center fw-bolder p-4 mt-4 text-warning" style="background-color: rgba(0, 0, 0,.4);">
-                © 2021 Copyright:
-                <a class="text-white fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        <div class="container-fluid p-5" >
+            
+            <!-- "PROJECT DESCRIPTION" -->
+            <div class="container p-2 ">
+                <h1 class="text-center" id="projects_header">My Projects</h1>
             </div>
-        </footer>
+
+            <!--PROJECT SECTION-->
+            <div class="row d-flex bg-dark bg-opacity-50 pe-1 ps-1" style="height: 400px; box-shadow: 0px 0px 20px 0px gray; border-radius: 10px;">
+                
+                
+
+                <!-- HTML -->
+                <div class="col-sm-2 m-auto border bg-dark text-white bg-opacity-50" style=" border-radius: 10px; box-shadow: 0px 10px 15px 0px white;">
+                        <h3 class="text-center">HTML</h3>
+                        <div class="text-center pb-2">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#html_collapse" aria-expanded="false" aria-controls="collapseExample">
+                                Samples
+                              </button>
+                            <div class="collapse mt-2" id="html_collapse">
+                                <ul class="list-group ">
+                                    <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 1</a></li>
+                                    <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 2</a></li>
+                                    <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 3</a></li>
+                                    <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 4</a></li>
+                                    <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 5</a></li>
+                                  </ul>
+                            </div>
+                        </div>
+                </div>
+                <!-- html -->
+
+                <!-- CSS -->
+                <div class="col-sm-2 m-auto border bg-dark text-white bg-opacity-50" style="border-radius: 10px; box-shadow: 0px 10px 15px 0px white;">
+                    <h3 class="text-center">CSS</h3>
+                    <div class="text-center pb-2">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#css_collapse" aria-expanded="false" aria-controls="collapseExample">
+                            Samples
+                          </button>
+                        <div class="collapse mt-2" id="css_collapse">
+                            <ul class="list-group ">
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 1</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 2</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 3</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 4</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 5</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- css -->
+
+                <!-- JAVASCRIPT -->
+                <div class="col-sm-2 m-auto border bg-dark text-white bg-opacity-50" style="border-radius: 10px; box-shadow: 0px 10px 15px 0px white;">
+                    <h3 class="text-center">JavaScript</h3>
+                    <div class="text-center pb-2">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#jscript_collapse" aria-expanded="false" aria-controls="collapseExample">
+                            Samples
+                          </button>
+                        <div class="collapse mt-2" id="jscript_collapse">
+                            <ul class="list-group ">
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 1</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 2</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 3</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 4</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 5</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- javascript -->
+
+                <!-- PHP -->
+                <div class="col-sm-2 m-auto border bg-dark text-white bg-opacity-50" style="border-radius: 10px; box-shadow: 0px 10px 15px 0px white;">
+              
+                    <h3 class="text-center">PHP</h3>
+                    <div class="text-center pb-2">
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#php_collapse" aria-expanded="false" aria-controls="collapseExample">
+                            Samples
+                          </button>
+                        <div class="collapse mt-2" id="php_collapse">
+                            <ul class="list-group ">
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 1</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 2</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 3</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 4</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 5</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- php -->
+
+                <!-- PYTHON -->
+                <div class="col-sm-2 m-auto border bg-dark text-white bg-opacity-50" style="border-radius: 10px; box-shadow: 0px 10px 15px 0px white;">
+              
+                    <h3 class="text-center">Python</h3>
+                    <div class="text-center pb-2">
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#python_collapse" aria-expanded="false" aria-controls="collapseExample">
+                            Samples
+                          </button>
+                        <div class="collapse mt-2" id="python_collapse">
+                            <ul class="list-group ">
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 1</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 2</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 3</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 4</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 5</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- phython -->
+
+                <!-- JAVA -->
+                <div class="col-sm-2 m-auto border bg-dark text-white bg-opacity-50" style="border-radius: 10px; box-shadow: 0px 10px 15px 0px white;">
+              
+                    <h3 class="text-center">JAVA</h3>
+                    <div class="text-center pb-2">
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#java_collapse" aria-expanded="false" aria-controls="collapseExample">
+                            Samples
+                          </button>
+                        <div class="collapse mt-2" id="java_collapse">
+                            <ul class="list-group ">
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 1</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 2</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 3</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 4</a></li>
+                                <li class="list-group-item bg-dark bg-opacity-10"><a class="btn btn-secondary" href="css/miniproj1.css" target="_blank" role="button">sample 5</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- java -->
+                
+            </div>
+            <!-- project section -->
+        </div>
+    
     </body>
 </html>
