@@ -126,7 +126,7 @@ body{
     border-radius: 10px;
 }
 
-p {
+#home-p {
     color: black;
     position: absolute;
     text-align: center;
