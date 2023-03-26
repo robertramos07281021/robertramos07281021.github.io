@@ -7,14 +7,11 @@ body{
 
 
 #nav{
-    
     overflow: auto;
     background: linear-gradient(315deg, rgba(.8,.8,.8,.8) 10%, rgba(.8,.8,.8,.6) 38%, rgba(.8,.8,.8,.3) 68%, rgba(.8,.8,.8,.8) 98%);
     animation: gradient 10s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    
-    
 }
 
 
@@ -167,3 +164,6 @@ body{
     background-color: rgba(0, 0, 0,.4);
     box-shadow: 0px 20px 25px 20px black;
 }
+
+
+
