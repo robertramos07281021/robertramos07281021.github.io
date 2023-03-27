@@ -5,7 +5,7 @@ body{
 
 }
 
-
+/* NAV AND ABOUT ME GRADIENT */
 #nav, #blkSquare1{
     overflow: auto;
     background: linear-gradient(315deg, rgba(.8,.8,.8,.8) 10%, rgba(.8,.8,.8,.6) 38%, rgba(.8,.8,.8,.3) 68%, rgba(.8,.8,.8,.8) 98%);
@@ -26,7 +26,7 @@ body{
         background-position: 0% 0%;
     }
 }
-
+/* NAV AND ABOUT ME GRADIENT */
 
 /* navigation hover */
 .bsl:hover{
@@ -178,3 +178,269 @@ body{
     box-shadow: 0px 0px 70px 20px black;
     border-radius: 10px;
 }
+
+
+/* SKILL PAGE */
+
+#rowsPercentage{
+    width: 16.6%;
+}
+
+    #html_skill{
+        border-start-start-radius: 100px;
+        border-top-right-radius: 100px;
+        animation: htmlHeights;
+        animation-duration: 2s;
+        height: 75%;
+        margin-left: 14%;
+        box-shadow: 0px 30px 25px 0px #dc3545;
+       
+    }
+    @keyframes htmlHeights{
+        from { height: 0%;}
+        to   {height: 75%;}
+    }
+
+    #css_skill{
+        border-start-start-radius: 100px;
+        border-top-right-radius: 100px;
+        animation: cssHeights;
+        animation-duration: 2s;
+        margin-left: 14%;
+        height: 80%;
+        box-shadow: 0px 30px 25px 0px #0d6efd;
+    }
+
+    @keyframes cssHeights{
+        from { height: 0%;}
+        to   {height: 80%;}
+    }
+
+    #jscript_skill{
+        border-start-start-radius: 100px;
+        border-top-right-radius: 100px;
+        animation: jsHeights;
+        animation-duration: 2s;
+        margin-left: 14%;
+        height: 60%;
+        box-shadow: 0px 30px 25px 0px #ffc107;
+    }
+
+    @keyframes jsHeights{
+        from { height: 0%;}
+        to   {height: 60%;}
+    }
+
+    #php_skill{
+        border-start-start-radius: 100px;
+        border-top-right-radius: 100px;
+        animation: phpHeights;
+        animation-duration: 2s;
+        margin-left: 14%;
+        height: 70%;
+        box-shadow: 0px 30px 25px 0px #198754;
+    }
+
+    @keyframes phpHeights{
+        from { height: 0%;}
+        to   {height: 70%;}
+    }
+
+    #python_skill{
+        border-start-start-radius: 100px;
+        border-top-right-radius: 100px;
+        animation: pythonHeights;
+        animation-duration: 2s;
+        margin-left: 14%;
+        height: 90%;
+        box-shadow: 0px 30px 25px 0px #0dcaf0;
+    }
+
+    @keyframes pythonHeights{
+        from { height: 0%;}
+        to   {height: 90%;}
+    }
+
+    #java_skill{
+        border-start-start-radius: 100px;
+        border-top-right-radius: 100px;
+        animation: javaHeights;
+        animation-duration: 2s;
+        margin-left: 14%;
+        height: 70%;
+        box-shadow: 0px 30px 25px 0px white;
+    }
+
+    @keyframes javaHeights{
+        from { height: 0%;}
+        to   {height: 70%;}
+    }
+
+    
+/* skill page */
+
+
+#skillBground{
+    opacity: 0.7;
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 0px 20px 25px 20px black;
+    z-index:-1;
+    top: 18%;
+    left: 12.5%;
+    margin: auto;
+}
+
+#wrapperContent{
+    box-shadow: 0px 20px 30px 20px black;
+}
+
+
+/* PROJECT ANIMATION */
+    /* HTML */
+#htmlAnime{
+    animation-name: Animehtml;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+}
+
+@keyframes Animehtml {
+    from{
+        
+        transform: translatex(-700px);
+    }
+    to {
+        transform: translatex(0);    
+    }
+}
+    /* html */
+
+
+    /* CSS */
+#cssAnime{
+    animation-name: Animecss;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+}
+
+@keyframes Animecss {
+    from{
+        
+        transform: translateY(700px);
+    }
+    to {
+        transform: translateY(0);    
+    }
+}
+    /* css */
+
+
+    /* JSCRIPT */
+#jsAnime{
+    animation-name: Animejscript;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+}
+
+@keyframes Animejscript {
+    from{
+        
+        transform: translateY(-700px);
+    }
+    to {
+        transform: translateY(0);    
+    }
+}    
+    /* jscript */
+
+
+    /* PHP */
+#phpAnime{
+    animation-name: Animephp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+}
+
+@keyframes Animephp {
+    from{
+        
+        transform: translateX(700px);
+    }
+    to {
+        transform: translateX(0);    
+    }
+}  
+    /* php */
+
+
+    /* PYTHON */
+#pythonAnime{
+    animation-name: Animepython;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+}
+
+@keyframes Animepython {
+    from{
+        
+        transform: translateY(700px);
+    }
+    to {
+        transform: translateY(0);    
+    }
+}  
+    /* python */
+
+
+
+    /* JAVA */
+#javaAnime{
+    animation-name: Animejava;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+}
+
+@keyframes Animejava {
+    from{
+        
+        transform: translateY(-700px);
+    }
+    to {
+        transform: translateY(0);    
+    }
+}  
+    /* java */
+
+
+/* PROJECT ANIMATION */
