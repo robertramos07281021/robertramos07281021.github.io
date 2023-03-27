@@ -166,4 +166,15 @@ body{
 }
 
 
+#middleSquare{
+    z-index: -1;
+    top: 30%;
+    right: 10%;
+    opacity: .5;
+    
+}
 
+#blkSquare1{
+    box-shadow: 0px 0px 70px 20px black;
+    border-radius: 10px;
+}
