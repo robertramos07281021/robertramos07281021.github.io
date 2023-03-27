@@ -6,7 +6,7 @@ body{
 }
 
 
-#nav{
+#nav, #blkSquare1{
     overflow: auto;
     background: linear-gradient(315deg, rgba(.8,.8,.8,.8) 10%, rgba(.8,.8,.8,.6) 38%, rgba(.8,.8,.8,.3) 68%, rgba(.8,.8,.8,.8) 98%);
     animation: gradient 10s ease infinite;
@@ -170,7 +170,7 @@ body{
     z-index: -1;
     top: 30%;
     right: 10%;
-    opacity: .5;
+    opacity: .7;
     
 }
 
