@@ -145,8 +145,15 @@ body{
     z-index:-1;
     top: 20%;
     left: 25%;
+    animation: animateUser 3s linear infinite;
 }
 
+@keyframes animateUser {
+    30%{
+     
+        top: 160px;
+    }
+}
 
 #projectBg{
     opacity: 0.4;
