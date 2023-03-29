@@ -103,7 +103,8 @@ body{
 
 
 #aboutme-p{
-    text-indent: 40px;
+    text-indent: 60px;
+    text-align: justify;
 }
 
 
@@ -474,146 +475,58 @@ body{
     /* java */
 /* project animation */
 
+
 /* ABOUT ME ANIMATION */
-    #aboutmeBG1{
-        opacity: 0.5;
-        background-repeat: no-repeat; 
-        background-size: 100% 100%;
-        font-style: oblique;
-        font-weight: bold;
-        z-index:-1;
-        top: 20%;
-        left: 25%;
-        animation: ABG1 3s linear infinite;
-        font-size: 70px;
-    }
+
+#shadow{
+    position: relative;
+    background-color: rgb(51, 51, 51);
     
-    @keyframes ABG1 {
-        30%{
-         
-            top: 160px;
-        }
+
+}
+
+
+
+#shadow:before, #shadow:after {
+    content:'';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: linear-gradient(45deg,#0d6efd,#ffc107,#198754,#6f42c1,#0dcaf0,#dc3545,#0d6efd,#ffc107,#198754,#6f42c1,#0dcaf0,#dc3545);
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    background-size: 400%;
+    z-index: -1;
+    animation: shadowAnimate 50s linear infinite;
+    border-radius: 40px;
+    opacity: 3;
+}
+
+#shadow:after{
+    filter: blur(50px);
+}
+@keyframes shadowAnimate {
+    0%
+    {
+        background-position: 0 0;
     }
 
-    #aboutmeBG2{
-        opacity: 0.5;
-        background-repeat: no-repeat; 
-        background-size: 100% 100%;
-        font-style: oblique;
-        font-weight: bold;
-        z-index:-1;
-        bottom: 120px;
-        left: 1200px;
-        font-size: 63px;
-        animation: ABG2 3s linear infinite;
-    }
-    
-    @keyframes ABG2 {
-        30%{
-         
-            bottom: 160px;
-        }
+    50%
+    {
+        background-position: 400% 0;
     }
 
-    #aboutmeBG3{
-        opacity: 0.5;
-        background-repeat: no-repeat; 
-        background-size: 100% 100%;
-        font-style: oblique;
-        font-weight: bold;
-        z-index:-1;
-        bottom: 400px;
-        left: 576px;
-        font-size: 50px;
-        color:blueviolet;
-        animation: ABG3 3s linear infinite;
-    }
-    
-    @keyframes ABG3 {
-        30%{
-         
-            bottom: 350px;
-        }
+    100%
+    {
+        background-position: 0 0;
     }
 
-    #aboutmeBG4{
-        opacity: 0.5;
-        background-repeat: no-repeat; 
-        background-size: 100% 100%;
-        font-style: oblique;
-        font-weight: bold;
-        z-index:-1;
-        right: 756px;
-        top: 120px;
-        font-size: 58px;
-        animation: ABG4 3.8s linear infinite;
-    }
-    
-    @keyframes ABG4 {
-        30%{
-         
-            right: 770px;
-        }
-    }
+}
 
-    #aboutmeBG5{
-        opacity: 0.5;
-        background-repeat: no-repeat; 
-        background-size: 100% 100%;
-        font-style: oblique;
-        font-weight: bold;
-        z-index:-1;
-        right: 350px;
-        top: 200px;
-        font-size: 35px;
-        animation: ABG5 4.5s linear infinite;
-    }
-    
-    @keyframes ABG5 {
-        30%{
-         
-            right: 370px;
-        }
-    }
-
-    #aboutmeBG6{
-        opacity: 0.5;
-        background-repeat: no-repeat; 
-        background-size: 100% 100%;
-        font-style: oblique;
-        font-weight: bold;
-        z-index:-1;
-        right: 700px;
-        top: 300px;
-        font-size: 75px;
-        animation: ABG6 5s linear infinite;
-    }
-    
-    @keyframes ABG6 {
-        30%{
-         
-            top: 310px;
-        }
-    }
-
-    #aboutmeBG7{
-        opacity: 0.5;
-        background-repeat: no-repeat; 
-        background-size: 100% 100%;
-        font-style: oblique;
-        font-weight: bold;
-        z-index:-1;
-        left: 300px;
-        bottom: 300px;
-        font-size: 30px;
-        animation: ABG7 4s linear infinite;
-    }
-    
-    @keyframes ABG7 {
-        30%{
-         
-            left: 320px;
-        }
-    }
 
 /* about me animation */
+#aboutme_wrapper{
+    padding-top: 5%;
+
+}
+
