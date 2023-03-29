@@ -502,7 +502,7 @@ body{
     animation: shadowAnimate 50s linear infinite;
     border-radius: 40px;
     opacity: 3;
-    filter: blur(50px);
+    filter: blur(70px);
 }
 
 @keyframes shadowAnimate {
@@ -513,7 +513,7 @@ body{
 
     50%
     {
-        background-position: 400% 0;
+        background-position: 500% 0;
     }
 
     100%
