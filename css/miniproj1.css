@@ -127,9 +127,10 @@ body{
 #home-p {
     color: black;
     position: absolute;
-    text-align: center;
-    bottom: 0;
 
+    bottom: 0;
+    text-align: justify;
+    text-indent: 60px;
     visibility: hidden;
     opacity:1 ;
     transition: bottom 0.5s, opacity 0.5s;
@@ -166,6 +167,7 @@ body{
     top: 30%;
     left: 5%;
 }
+
 
 
 #contentPic:hover p{
