@@ -18,11 +18,11 @@
          border-radius: 50px;
          border: 1px solid black;
          background: url('images/htmllogo.png');
-         background-repeat: no-repeat;
-         background-size: 100% 100%;
+         /* background-repeat:; */
+         background-size: cover;
          margin:10px;
          background-position: center;
-         width: 5%;
+         width: 20%;
          height: 50%;
          position:relative;
          transition: width .9s;
@@ -33,19 +33,19 @@
          #contentPic:nth-child(2) {
              background: url('images/csslogo.png');
              background-position: center;
-             background-size: 100% 100%;
+             background-size: cover;
          }
 
          #contentPic:nth-child(3) {
              background: url('images/jscript.jpg');
              background-position: center;
-             background-size: 100% 100%;
+             background-size: cover;
          }
 
          #contentPic:nth-child(4) {
              background: url('images/phplogo.png');
              background-position: center;
-             background-size: 100% 100%;
+             background-size: cover;
 
          }
 
@@ -98,7 +98,7 @@
             <div class="d-flex flex-row justify-content-center font-monospace h-100 w-75">
                 
                 <div class="align-self-center" id="contentPic" >
-                    <p id="home-p" class="bg-white text-dark bg-opacity-75">HTML is a standardised system for tagging text files that creates the structure for just about every page that we find and use on the web. It's HTML that adds in page breaks, paragraphs, bold lettering, italics, and more. HTML works to build this structure by using tags that tell browsers what to do with text.</p>
+                    <div><p id="home-p" class="bg-white text-dark bg-opacity-75">HTML is a standardised system for tagging text files that creates the structure for just about every page that we find and use on the web. It's HTML that adds in page breaks, paragraphs, bold lettering, italics, and more. HTML works to build this structure by using tags that tell browsers what to do with text.</p></div>
                 </div>
                 <div class= "align-self-center "  id="contentPic">
                    <p  id="home-p" class="bg-white text-dark bg-opacity-75">It is the coding language that gives a website its look and layout. Along with HTML, CSS is fundamental to web design. Without it, websites would still be plain text on white backgrounds.</p>
