@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>NetFlix</title>
+
+</head>
+<body>
+    
+  
+    <div class="container-fluid h-100">
+        <div class=" h-100">
+
+            <div class="nav d-flex justify-content-between">
+                <div style="display: flex;">
+                <h2 class="netflix">NETFLIX</h2>
+                <h2  class="home"><a href="">Home</a></h2>
+                </div>
+
+                <div class="search"> 
+                <form action="index.html" id="searchForm">
+                    <input type="text" name="q" placeholder="Search...." size="30">
+                    <button>Search</button>
+                </form>
+                </div>
+
+            </div>
+
+            <div class="movieSection">
+
+                <h3>Trending Now</h3>
+                <div class="d-flex trending w-100" >
+
+                    <button class="handleTrending handle leftHandleTrending">
+                        <div class="text">&#8249;</div>
+                    </button>
+                    <section class="trendingNow">
+                    </section>
+                    <button class="handle rightHandleTrending">
+                        <div class="text">&#8250;</div>
+                    </button>
+
+                </div>
+
+                <h3>Action & adventure</h3>
+                <div class="d-flex action w-100">
+
+                    <button class="handle leftHandleAction">
+                        <div class="text">&#8249;</div>
+                    </button>
+                    <section class="actionAdventure">
+                    </section>
+                    <button class="handle rightHandleAction">
+                        <div class="text">&#8250;</div>
+                    </button>
+
+                </div>
+
+                <h3>Dramas</h3>
+                <div class="d-flex dramaSection w-100">
+
+                    <button class="handle leftHandleDrama">
+                        <div class="text">&#8249;</div>
+                    </button>
+                    <section class="dramas">
+                    </section>
+                    <button class="handle rightHandleDrama">
+                        <div class="text">&#8250;</div>
+                    </button>
+
+                </div>
+
+            </div>
+            
+            <div class="movies d-flex flex-wrap justify-content-center mt-4">
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="jscript/script.js"></script>    
+</body>
+</html>
