@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+box-sizing: border-box;
+margin: 0;
+padding:0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+    <div>
+        
+
+    </div>
+    
+
+    <script>
+let randomNum;
+let guessInputText;
+let guessInput;
+let gameDuration = false;
+let score = 0;
+
+function guessGame(){
+    randomNum = Math.floor(Math.random() * 6) + 1;
+    while (!gameDuration) {
+        guessInputText = prompt(`Please enter a number!!!! Range 1 to 6.\n\nWhat is the number? \n\n Your Score: ${score}`);
+        guessInput = parseInt(guessInputText);
+        gameDuration = validationGuess();
+    }
+}
+
+function validationGuess() {
+    if (isNaN(guessInput)) {
+        alert(`You have not entered a number.\n\nPlease enter a number in the range 1 to 6.`);
+        return false;
+    }
+
+    if ((guessInput < 1) || (guessInput > 6)) {
+        alert("Please enter an number in the range 1 to 6.");
+        return false;
+    }
+
+    if (guessInput != randomNum) {
+        alert("Please try again!!");
+        return false;
+    }
+
+    score += 1;
+    confirm(`You won! The Random number is ${randomNum}. \n\n Do you want to play more? \n\n Your Score: ${score}`);
+    
+    if(confirm() == true)
+    {
+        guessGame();
+        return false;
+    } else {  
+        alert(`Thanks for playing !!!! \n\nYour Total Score: ${score}`);
+        score = 0;
+        guessGame();
+        return true;
+    }
+    
+}
+guessGame();
+validationGuess();
+    </script>
+</body>
+</html>
